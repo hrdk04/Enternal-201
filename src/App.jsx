@@ -85,10 +85,7 @@ function App() {
               <labal>City</labal>
               <input type="text" name="city" id="city"  value={formdata.city} onChange={handleChange} required/>
             </div>
-             <div className="input-section">
-              <labal>Book Date</labal>
-              <input type="date" name="date" id="date"  value={formdata.book_date} onChange={handleChange}  />
-            </div>
+             
              <div className="input-section">
               <labal>Prefer Time</labal>
               <input type="Time" name="time" id="time" value={formdata.time} onChange={handleChange}  />
