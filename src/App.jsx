@@ -106,7 +106,6 @@ function App() {
               <th>Contact</th>
               <th>Total Person</th>
               <th>City</th>
-              <th>Book Date</th>
               <th>Time</th>
             </tr>
                      <tbody>
@@ -117,7 +116,6 @@ function App() {
                <td>{item.phone}</td>
                <td>{item.person}</td>
                <td>{item.city}</td>
-               <td>{item.book_date}</td>
                <td>{item.time}</td>
              </tr>
            ))}
