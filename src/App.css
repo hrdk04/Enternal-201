@@ -58,8 +58,8 @@
 
 #center {
   display: flex;
-  flex-direction: column;
   gap: 25px;
+  justify-content: space-between;
   place-content: center;
   place-items: center;
   flex-grow: 1;
@@ -71,6 +71,7 @@
 }
 
 #next-steps {
+  bottom: 0;
   display: flex;
   border-top: 1px solid var(--border);
   text-align: left;
@@ -181,4 +182,70 @@
     right: 0;
     border-right-color: var(--border);
   }
+}
+
+
+.registration-main{
+  border: 1px solid red transparent;
+  padding: 20px 25px;
+  height: 70vh;
+}
+
+.registration-main > form {
+  border: 1px solid rgb(122, 10, 187);
+  box-shadow: 1px 2px 20px;
+  border-radius: 10px;
+  padding:10px 20px;
+  width: 50%;
+  margin: 5% auto;
+  
+}
+
+table{
+  margin: 1% auto;
+
+}
+
+.registration-main > form > div {
+  /* border: 1px solid blue; */
+  margin: 3% auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+input  {
+  border: 1px solid rgb(83, 29, 134);
+  width: 50%;
+}
+select{
+  border: 1px solid rgb(83, 29, 134);
+  width: 51%;
+
+}
+button{
+  padding: 5px 10px;
+}
+
+@media (min-width: 1465px ){
+  
+.registration-main{
+  border: 1px solid rgb(0, 255, 242) transparent;
+  padding: 20px 25px;
+  margin: 1% 20%;
+}
+
+}
+
+.center{
+  display: flex;
+  height: 30px;
+  border:2px solid rgb(92, 40, 122);
+  justify-content: center;
+  padding: 20px 50px;
+  background-color: #e7c658;
+}
+.center h2{
+  font-weight: bold;
+  font-size: 28px;
 }
