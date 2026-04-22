@@ -57,19 +57,19 @@ function App() {
             <h2>Registration Form</h2>
             <div className="input-section">
               <labal>Enter Your Name</labal>
-              <input type="text" name="name" id="name" value={formdata.name} onChange={handleChange} />
+              <input type="text" name="name" id="name" value={formdata.name} onChange={handleChange} required />
             </div>
             <div className="input-section">
               <labal>Enter Email</labal>
-              <input type="email" name="email" id="email" value={formdata.email} onChange={handleChange} />
+              <input type="email" name="email" id="email" value={formdata.email} onChange={handleChange} required />
             </div>
             <div className="input-section">
               <labal>Enter Contact</labal>
-              <input type="" name="phone" id="phone" value={formdata.phone} onChange={handleChange}  />
+              <input type="" name="phone" id="phone" value={formdata.phone} onChange={handleChange} required />
             </div>
             <div className="input-section">
               <labal>Total Person</labal>
-              <select name="person" id="person" value={formdata.person} onChange={handleChange}>
+              <select name="person" id="person" value={formdata.person} onChange={handleChange} required>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -83,15 +83,15 @@ function App() {
             </div>
              <div className="input-section">
               <labal>City</labal>
-              <input type="text" name="city" id="city"  value={formdata.city} onChange={handleChange}/>
+              <input type="text" name="city" id="city"  value={formdata.city} onChange={handleChange} required/>
             </div>
              <div className="input-section">
               <labal>Book Date</labal>
-              <input type="date" name="date" id="date"  value={formdata.book_date} onChange={handleChange} />
+              <input type="date" name="date" id="date"  value={formdata.book_date} onChange={handleChange}  />
             </div>
              <div className="input-section">
               <labal>Prefer Time</labal>
-              <input type="Time" name="time" id="time" value={formdata.time} onChange={handleChange} />
+              <input type="Time" name="time" id="time" value={formdata.time} onChange={handleChange}  />
             </div>
              <div className="btn-section" style={{display: 'flex', justifyContent:'space-evenly'}}>
               <button type="submit">Register</button>
